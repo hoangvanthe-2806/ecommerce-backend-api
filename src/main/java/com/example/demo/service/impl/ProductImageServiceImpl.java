@@ -50,7 +50,7 @@ public class ProductImageServiceImpl implements ProductImageService {
         img.setProduct(product);
         img.setUrl(url);
         img.setAltText(file.getOriginalFilename());
-        // bạn có thể set isPrimary/sortOrder theo logic
+        //set isPrimary/sortOrder theo logic
         return repo.save(img);
     }
 }
